@@ -175,7 +175,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mini Carrusel de Reseñas</title>
+  <title>Opiniones Horizontales</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -184,36 +184,31 @@
       padding: 20px;
     }
 
-    .contenedor-flex {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
     .carrusel-container {
-      width: 280px;
-      height: 100px;
+      width: 100%;
+      max-width: 1000px;
       overflow: hidden;
-      border-radius: 8px;
+      margin: auto;
       background: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      font-size: 0.85rem;
-      position: relative;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 10px 0;
     }
 
     .carrusel {
-      position: absolute;
-      top: 0;
-      left: 0;
-      animation: deslizar 60s linear infinite;
+      display: flex;
+      gap: 20px;
+      animation: moverCarrusel 60s linear infinite;
     }
 
     .reseña {
-      width: 280px;
-      height: 100px;
+      flex: 0 0 auto;
+      width: 250px;
+      background-color: #f9f9f9;
       padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
       text-align: center;
-      box-sizing: border-box;
     }
 
     .nombre {
@@ -224,29 +219,52 @@
 
     .estrellas {
       color: #FFD700;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     .comentario {
       font-style: italic;
+      font-size: 0.9rem;
       margin-top: 5px;
     }
 
-    @keyframes deslizar {
-      0% { top: 0; }
-      100% { top: -3000px; } /* Ajustado al número de reseñas verticalmente */
+    @keyframes moverCarrusel {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-3000px); }
     }
   </style>
 </head>
 <body>
 
-  <div class="contenedor-flex">
-    <h2 style="margin: 0;">Opiniones</h2>
-
-    <div class="carrusel-container">
-      <div class="carrusel">
-        <!-- Reseñas (una por una, desplazamiento vertical) -->
-        <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">María</div><div class="comentario">Excelente atención.</div></div>
+  <div class="carrusel-container">
+    <div class="carrusel">
+      <!-- Reseñas -->
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">María</div><div class="comentario">Excelente atención.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Carlos</div><div class="comentario">Muy buen trabajo.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Lucía</div><div class="comentario">Servicio rápido y confiable.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Pedro</div><div class="comentario">Recomendado al 100%.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Elena</div><div class="comentario">Volveré pronto.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Javier</div><div class="comentario">Muy buena atención.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Sofía</div><div class="comentario">Excelente trato.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Miguel</div><div class="comentario">Todo correcto.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Valeria</div><div class="comentario">¡Fantástico!</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Martín</div><div class="comentario">Buen precio y calidad.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Ana</div><div class="comentario">Todo bien, gracias.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Diego</div><div class="comentario">Gran experiencia.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Camila</div><div class="comentario">Amables y profesionales.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Ricardo</div><div class="comentario">Rápido y eficiente.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Gabriela</div><div class="comentario">¡Me encantó!</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Héctor</div><div class="comentario">Perfecto todo.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Laura</div><div class="comentario">Muy recomendable.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Andrés</div><div class="comentario">Volvería sin dudar.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Natalia</div><div class="comentario">Excelente equipo.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Esteban</div><div class="comentario">Buena atención.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Paula</div><div class="comentario">Muy profesionales.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Daniel</div><div class="comentario">Todo genial.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Florencia</div><div class="comentario">Me gustó mucho.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Tomás</div><div class="comentario">Un 10.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Claudia</div><div class="comentario">Recomendable.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">María</div><div class="comentario">Excelente atención.</div></div>
         <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Carlos</div><div class="comentario">Muy buen trabajo.</div></div>
         <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Lucía</div><div class="comentario">Servicio rápido y confiable.</div></div>
         <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Pedro</div><div class="comentario">Recomendado al 100%.</div></div>
@@ -494,9 +512,9 @@
     <p>&copy; 2025 Tecno Emmanuel SAS - Todos los derechos reservados</p>
   <img src="logo.jpg" alt="Logo" style="width: 50px; height: auto; margin-right: 10px;">
   </footer>
+   </body>
+   </html>
 
-</body>
-</html>
 
 
 
