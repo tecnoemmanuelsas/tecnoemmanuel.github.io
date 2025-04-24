@@ -1,15 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tecno Emmanuel sas</title>
+  <title>Tecno Emmanuel SAS</title>
   <style>
     body {
-      font-family: Elegant, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       background: #f4f4f4;
       color: #333;
+    }
+
+    .banner {
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #0a74da;
+      color: white;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      position: relative;
+    }
+
+    .banner p {
+      display: inline-block;
+      padding-left: 100%;
+      animation: mover 15s linear infinite;
+    }
+
+    @keyframes mover {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
     }
 
     header {
@@ -26,7 +48,6 @@
 
     header p {
       margin-top: 0.5rem;
-      font-style: Oswald;
       color: #bbb;
     }
 
@@ -59,6 +80,39 @@
       border-radius: 10px;
     }
 
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      margin: 20px 0;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc59;
+    }
+
+    .redes-sociales {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .redes-sociales a {
+      margin: 0 10px;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .redes-sociales a:hover {
+      transform: scale(1.2);
+    }
+
     footer {
       background: #222;
       color: white;
@@ -66,10 +120,14 @@
       padding: 1rem;
       margin-top: 2rem;
     }
-  </style> 
-  
+  </style>
 </head>
 <body>
+
+  <div class="banner">
+    <p>📱 Contáctanos a nuestro WhatsApp 3008515624</p>
+  </div>
+
   <header>
     <h1>Tecno Emmanuel</h1>
     <p>Dios es mi guía en la micro soldadura</p>
@@ -82,86 +140,57 @@
       <li>Mantenimiento preventivo y correctivo de equipos de cómputo</li>
       <li>Mantenimiento de equipos de ofimática y de mesa</li>
       <li>Instalación de cámaras de videovigilancia</li>
-      <li>reparacion de sofware de equipos moviles</li>
-      <li>liberaciones, eliminacion de cuentas de google</li>
-      <li>desbloqueo de icloud, servicios remotos, venta de licencias de tool</li>
+      <li>Reparación de software de equipos móviles</li>
+      <li>Liberaciones, eliminación de cuentas de Google</li>
+      <li>Desbloqueo de iCloud, servicios remotos, venta de licencias de herramientas</li>
     </ul>
   </section>
 
   <section>
     <h2>Portafolio</h2>
-    <p> nuestros servicios:</p>
-  <img src="publicidad1.jpg" alt="TallerTecnoEmmanuel" style="max-width:100%; height:auto; margin-bottom:1rem;">
-  <img src="computadora.jpg" alt="Reparacióndepc" style="max-width:100%; height:auto;">
+    <p>Nuestros servicios:</p>
+    <img src="publicidad1.jpg" alt="Taller Tecno Emmanuel" style="max-width:100%; height:auto; margin-bottom:1rem;">
+    <img src="computadora.jpg" alt="Reparación de PC" style="max-width:100%; height:auto;">
+    <img src="reparacion_computadoras.png" alt="Reparación de Computadoras" style="max-width:100%; height:auto;">
+    <img src="problemas_pc.png" alt="Problemas con PC" style="max-width:100%; height:auto;">
+    <img src="https://images.unsplash.com/photo-1627033344207-3a4e2559b063" alt="Técnico móvil" width="400">
+    <img src="https://images.unsplash.com/photo-1580910051073-0c84b20ef41d" width="400" alt="Varios smartphones">
+    <img src="mente.png" width="400" alt="Herramientas electrónicas">
   </section>
-<body>
-  <h1>Servicio Técnico de Móviles</h1>
-  <p>Reparamos celulares de todas las marcas con garantía y rapidez.</p>
-  <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" width="400" alt="Reparación de celular">
-</body>
-<img src="https://images.unsplash.com/photo-1627033344207-3a4e2559b063" width="400" alt="Técnico móvil">
-<img src="https://images.unsplash.com/photo-1580910051073-0c84b20ef41d" width="400" alt="Varios smartphones">
-<img src="mente.png" width="400" alt="Herramientas electrónicas">
-<img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" width="400" alt="Reparación de celular">
 
   <section class="contacto">
     <h2>Contacto</h2>
     <p>📞 <strong>3008515624</strong></p>
-    <p>tecnoemmanuelsas@gmail.com.</p>
+    <p>📧 tecnoemmanuelsas@gmail.com</p>
+    <a class="whatsapp-button" href="https://wa.me/573008515624" target="_blank">💬 Escríbenos por WhatsApp</a>
   </section>
-<p>testimonios de clientes:</p>
- <img src="img/flayers.png" alt="Publicidad principal" width="500">
 
-    </style> 
-     .redes-sociales {
-  margin-top: 20px;
-}
+  <section>
+    <h2>Testimonios de Clientes</h2>
+    <img src="img/flayers.png" alt="Publicidad principal" width="500">
+  </section>
 
-.redes-sociales a {
-  margin: 0 10px;
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
+  <section>
+    <h2>Síguenos en redes sociales</h2>
+    <div class="redes-sociales">
+      <a href="https://www.tiktok.com/@tecno_emmanuel_sas?_t=ZS-8voEMPJpdQd&_r=1" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" width="40">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="40">
+      </a>
+      <a href="https://www.instagram.com/tecno_emmanuel" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+      </a>
+    </div>
+  </section>
 
-.redes-sociales a:hover {
-  transform: scale(1.2);
-}
+  <footer>
+    <p>&copy; 2025 Tecno Emmanuel SAS - Todos los derechos reservados</p>
+  </footer>
 
-</head>
-  
-    <body>
-   <h1>Reparación de Computadoras e Impresoras</h1>
-   <p>Servicio técnico especializado en computadoras, impresoras y celulares.</p>
+</body>
+</html>
 
-    <h2>Publicidad</h2>
-    <img src="publicidad1.jpg" alt="Publicidad" width="400">
-
-     <h2>Reparación de Computadoras</h2>
-      <img src="reparacion_computadoras.png" alt="Reparación de Computadoras" width="400">
- 
-    <h2>Reparación de Celulares</h2>
-        <img src="https://images.unsplash.com/photo-1627033344207-3a4e2559b063" alt="Técnico móvil" width="400">
-
-     <h2>¿Tienes problemas con tu PC?</h2>
-      <img src="problemas_pc.png" alt="Problemas con PC" width="400"> 
-      
-
-    <p>&copy; 2025 Tecno Emmanuel enterprises - Todos los derechos reservados</p>
-    </footer>
-    </body> 
-      <h2>Síguenos en redes sociales</h2>
-<div class="redes-sociales">
-  <a href="https://www.tiktok.com/@tecno_emmanuel_sas?_t=ZS-8voEMPJpdQd&_r=1" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" width="40">
-  </a>
-  <a href="https://www.facebook.com/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="40">
-  </a>
-  <a href="https://www.instagram.com/tecno_emmanuel" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
-  </a>
-</div>
-
-   </html>
 
 
