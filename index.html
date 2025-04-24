@@ -163,8 +163,227 @@
   </section>
     
   <section>
-    <h2>Testimonios de Clientes</h2>
-    <img src="https://cdn.pixabay.com/photo/2016/11/29/10/16/stars-1869843_960_720.png" alt="Opiniones de clientes" width="400">
+    <h2>Testimonios de Clientes</h2> 
+     <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrusel de Reseñas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+
+    .carrusel-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .carrusel {
+      display: flex;
+      width: calc(300%); /* suficiente para rotar varias páginas */
+      animation: mover 30s linear infinite;
+    }
+
+    .reseña {
+      flex: 0 0 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .nombre {
+      font-weight: bold;
+      color: #008000;
+      margin-bottom: 5px;
+    }
+
+    .estrellas {
+      color: #FFD700;
+      font-size: 1.2rem;
+    }
+
+    .comentario {
+      font-style: italic;
+      margin-top: 8px;
+    }
+
+    @keyframes mover {
+      0% { transform: translateX(0); }
+      10% { transform: translateX(0); }
+      20% { transform: translateX(-100%); }
+      30% { transform: translateX(-100%); }
+      40% { transform: translateX(-200%); }
+      50% { transform: translateX(-200%); }
+      60% { transform: translateX(-300%); }
+      70% { transform: translateX(-300%); }
+      80% { transform: translateX(-400%); }
+      90% { transform: translateX(-400%); }
+      100% { transform: translateX(-500%); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Lo que dicen nuestros clientes</h2>
+
+  <div class="carrusel-container">
+    <div class="carrusel">
+      <!-- Generadas automáticamente -->
+      <!-- Grupo 1 -->
+      <div class="reseña">
+        <div class="nombre">María López</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">¡Excelente servicio!</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Carlos Herrera</div>
+        <div class="estrellas">★★★★☆</div>
+        <div class="comentario">Muy buena atención.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Lucía Martínez</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Recomiendo totalmente.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Sofía Ramírez</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Volveré sin dudas.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Javier Torres</div>
+        <div class="estrellas">★★★★☆</div>
+        <div class="comentario">Buena experiencia general.</div>
+      </div>
+
+      <!-- Grupo 2 -->
+      <div class="reseña">
+        <div class="nombre">Ana González</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">¡Muy recomendado!</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Pedro Salas</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Servicio profesional.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Valeria Díaz</div>
+        <div class="estrellas">★★★★☆</div>
+        <div class="comentario">Cumplieron con todo.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Martín Ruiz</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Repararon rápido mi celular.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Laura Vega</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Gran atención al cliente.</div>
+      </div>
+
+      <!-- Grupo 3 -->
+      <div class="reseña">
+        <div class="nombre">Daniel Morales</div>
+        <div class="estrellas">★★★★☆</div>
+        <div class="comentario">Muy buena experiencia.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Carla Pérez</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Todo perfecto.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Santiago Bravo</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Precios justos y rapidez.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Natalia Ríos</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Excelente trato.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Iván Soto</div>
+        <div class="estrellas">★★★★☆</div>
+        <div class="comentario">Muy contento con el resultado.</div>
+      </div>
+
+      <!-- Grupo 4 -->
+      <div class="reseña">
+        <div class="nombre">Elena Cruz</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Altamente recomendable.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Luis Figueroa</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Atención personalizada.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Andrea Paredes</div>
+        <div class="estrellas">★★★★☆</div>
+        <div class="comentario">Muy cumplidos con el tiempo.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Gabriel Leiva</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario">Reparación impecable.</div>
+      </div>
+      <div class="reseña">
+        <div class="nombre">Fernanda Aguilar</div>
+        <div class="estrellas">★★★★★</div>
+        <div class="comentario
+
+
+
+
+    
+    <div class="banner-reseñas">
+    <h2>Lo que dicen nuestros clientes</h2>
+
+    <div class="reseña">
+      <div class="nombre">María López</div>
+      <div class="estrellas">★★★★★</div>
+      <div class="comentario">¡Excelente servicio y atención!</div>
+    </div>
+
+    <div class="reseña">
+      <div class="nombre">Carlos Herrera</div>
+      <div class="estrellas">★★★★☆</div>
+      <div class="comentario">Muy bueno, volvería sin dudarlo.</div>
+    </div>
+
+    <div class="reseña">
+      <div class="nombre">Lucía Martínez</div>
+      <div class="estrellas">★★★★★</div>
+      <div class="comentario">Repararon mi teléfono en tiempo récord.</div>
+    </div>
+
+    <div class="reseña">
+      <div class="nombre">Javier Torres</div>
+      <div class="estrellas">★★★★☆</div>
+      <div class="comentario">Buena experiencia general.</div>
+    </div>
+
+    <div class="reseña">
+      <div class="nombre">Ana González</div>
+      <div class="estrellas">★★★★★</div>
+      <div class="comentario">¡Totalmente recomendado!</div>
+    </div>
+  </div>
 
   </section>
 
@@ -174,7 +393,7 @@
       <a href="https://www.tiktok.com/@tecno_emmanuel_sas?_t=ZS-8voEMPJpdQd&_r=1" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok" width="40">
       </a>
-      <a href="https://https://www.facebook.com/repairsoluciones" target="_blank">
+      <a href="https://https://www.facebook.com/share/1AKYDxsQva/" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" width="40">
       </a>
       <a href="https://www.instagram.com/tecno_emmanuel" target="_blank">
