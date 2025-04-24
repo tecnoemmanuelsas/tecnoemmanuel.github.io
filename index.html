@@ -26,7 +26,7 @@
     .banner p {
       display: inline-block;
       padding-left: 100%;
-      animation: mover 15s linear infinite;
+      animation: mover 35s linear infinite;
     }
 
     @keyframes mover {
@@ -191,8 +191,8 @@
 
     .carrusel {
       display: flex;
-      width: calc(300%); /* suficiente para rotar varias páginas */
-      animation: mover 30s linear infinite;
+      width: calc(500%); /* suficiente para rotar varias páginas */
+      animation: mover 90s linear infinite;
     }
 
     .reseña {
@@ -219,18 +219,14 @@
     }
 
     @keyframes mover {
-      0% { transform: translateX(0); }
-      10% { transform: translateX(0); }
-      20% { transform: translateX(-100%); }
-      30% { transform: translateX(-100%); }
-      40% { transform: translateX(-200%); }
-      50% { transform: translateX(-200%); }
-      60% { transform: translateX(-300%); }
-      70% { transform: translateX(-300%); }
-      80% { transform: translateX(-400%); }
-      90% { transform: translateX(-400%); }
-      100% { transform: translateX(-500%); }
-    }
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-100%); }
+  40%  { transform: translateX(-200%); }
+  60%  { transform: translateX(-300%); }
+  80%  { transform: translateX(-400%); }
+  100% { transform: translateX(-500%); }
+}
+
   </style>
 </head>
 <body>
@@ -346,13 +342,6 @@
         <div class="nombre">Fernanda Aguilar</div>
         <div class="estrellas">★★★★★</div>
         <div class="comentario
-
-
-
-
-    
-    <div class="banner-reseñas">
-    <h2>Lo que dicen nuestros clientes</h2>
 
     <div class="reseña">
       <div class="nombre">María López</div>
