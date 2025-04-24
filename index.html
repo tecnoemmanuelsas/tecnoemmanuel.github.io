@@ -181,25 +181,20 @@
       background: #f4f4f4;
       color: #333;
       padding: 20px;
-    }
-
     .carrusel-container {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      overflow: hidden;
-      border-radius: 12px;
-      background: white;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+  max-width: 300px; /* Antes 800px */
+  font-size: 0.85rem; /* Texto más pequeño */
+  padding: 10px;
+  border-radius: 8px;
+}
+.reseña {
+  padding: 10px 5px;
+}
+.estrellas {
+  font-size: 1rem;
+}
 
-    .carrusel {
-      display: flex;
-      width: calc(500%); /* suficiente para rotar varias páginas */
-      animation: mover 90s linear infinite;
-    }
-
-    .reseña {
+   .reseña {
       flex: 0 0 100%;
       padding: 20px;
       box-sizing: border-box;
