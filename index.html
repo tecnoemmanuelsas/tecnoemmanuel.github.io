@@ -184,55 +184,65 @@
       padding: 20px;
     }
 
-    .carrusel-container {
-      width: 100%;
-      max-width: 1000px;
-      overflow: hidden;
-      margin: auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      padding: 10px 0;
-    }
+  <style>
+  .carrusel-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    height: 180px; /* <<< altura fija para eliminar espacio extra */
+    position: relative;
+  }
 
-    .carrusel {
-      display: flex;
-      gap: 20px;
-      animation: moverCarrusel 60s linear infinite;
-    }
+  .carrusel {
+    display: flex;
+    gap: 20px;
+    animation: moverCarrusel 60s linear infinite;
+    height: 100%;
+    align-items: center;
+  }
 
-    .reseña {
-      flex: 0 0 auto;
-      width: 250px;
-      background-color: #f9f9f9;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+  .reseña {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    text-align: center;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .nombre {
-      font-weight: bold;
-      color: #008000;
-      margin-bottom: 5px;
-    }
+  .nombre {
+    font-weight: bold;
+    color: #008000;
+    margin-bottom: 5px;
+  }
 
-    .estrellas {
-      color: #FFD700;
-      font-size: 1.2rem;
-    }
+  .estrellas {
+    color: #FFD700;
+    font-size: 1.2rem;
+  }
 
-    .comentario {
-      font-style: italic;
-      font-size: 0.9rem;
-      margin-top: 5px;
-    }
+  .comentario {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
 
-    @keyframes moverCarrusel {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-3000px); }
-    }
-  </style>
+  @keyframes moverCarrusel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-3000px); }
+  }
+</style>
+
 </head>
 <body>
 
@@ -488,8 +498,34 @@
       <div class="nombre">Ana González</div>
       <div class="estrellas">★★★★★</div>
       <div class="comentario">¡Totalmente recomendado!</div>
+     <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">María</div><div class="comentario">Excelente atención.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Carlos</div><div class="comentario">Muy buen trabajo.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Lucía</div><div class="comentario">Servicio rápido y confiable.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Pedro</div><div class="comentario">Recomendado al 100%.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Elena</div><div class="comentario">Volveré pronto.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Javier</div><div class="comentario">Muy buena atención.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Sofía</div><div class="comentario">Excelente trato.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Miguel</div><div class="comentario">Todo correcto.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Valeria</div><div class="comentario">¡Fantástico!</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Martín</div><div class="comentario">Buen precio y calidad.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Ana</div><div class="comentario">Todo bien, gracias.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Diego</div><div class="comentario">Gran experiencia.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Camila</div><div class="comentario">Amables y profesionales.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Ricardo</div><div class="comentario">Rápido y eficiente.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Gabriela</div><div class="comentario">¡Me encantó!</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Héctor</div><div class="comentario">Perfecto todo.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Laura</div><div class="comentario">Muy recomendable.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Andrés</div><div class="comentario">Volvería sin dudar.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">juliana</div><div class="comentario">Excelente equipo.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Esteban</div><div class="comentario">Buena atención.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">alejandra</div><div class="comentario">Muy profesionales.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">yulexis</div><div class="comentario">Todo genial.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★☆</div><div class="nombre">Florencia</div><div class="comentario">Me gustó mucho.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Tomás</div><div class="comentario">Un 10.</div></div>
+      <div class="reseña"><div class="estrellas">★★★★★</div><div class="nombre">Claudia</div><div class="comentario">Recomendable.</div></div>
     </div>
   </div>
+
 
   </section>
 
